@@ -1,0 +1,15 @@
+# Ignore Dataset Folders
+data/
+Test_NoisyLR/
+Restored_Outputs/
+results_visuals/
+raw/
+
+# Ignore Zip Files
+*.zip
+
+# Ignore __pycache__
+__pycache__/
+
+# Keep the Model Checkpoint
+!checkpoints/best_model.pth
