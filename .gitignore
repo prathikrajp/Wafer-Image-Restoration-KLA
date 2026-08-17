@@ -13,3 +13,5 @@ __pycache__/
 
 # Keep the Model Checkpoint
 !checkpoints/best_model.pth
+semicon/
+Restored_Outputs/

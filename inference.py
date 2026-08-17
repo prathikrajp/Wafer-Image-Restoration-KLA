@@ -30,13 +30,13 @@ def main():
     model.eval()
 
     # 2. Output Folders
-    test_dir = Path("./Test_NoisyLR")
+    test_dir = Path(r"C:\Users\prath\Documents\CIT\Projects\Wafer-Image-Restoration-KLA\semicon\Test_NoisyLR\NoisyLR")
     out_npy_dir = Path("./Restored_Outputs/npy")
     out_png_dir = Path("./Restored_Outputs/png")
     os.makedirs(out_npy_dir, exist_ok=True)
     os.makedirs(out_png_dir, exist_ok=True)
 
-    test_files = sorted(test_dir.glob("*.npy"))
+    test_files = sorted(test_dir.rglob("*.npy"))
     print(f"[*] Found {len(test_files)} test files to restore.")
 
     # 3. Process Each Image

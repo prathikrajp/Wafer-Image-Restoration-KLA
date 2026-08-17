@@ -23,7 +23,7 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from skimage.metrics import structural_similarity as ssim_fn
 
-from train_sr import SRUNet, SRDataset
+from train import SRUNet, SRDataset
 
 
 def psnr(pred, target):
